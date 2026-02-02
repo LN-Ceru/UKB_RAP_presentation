@@ -13,7 +13,8 @@ heterozygote_readin_allancs = data.table::fread("/mnt/project/Resources/allancs.
 
 print("INSERT YOUR RCODE HERE")
 
-
+#write file to a readable format
 write.table(Exclsuion_list, file = "./processed_data.txt")
 
+#you need to use dx upload to return the files to your file system or they will be lost when you terminate the r studio session
 system("dx upload processed_data.txt --path=/Laurences_file_labyrinth/")
