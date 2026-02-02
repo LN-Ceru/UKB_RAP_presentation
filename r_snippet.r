@@ -6,7 +6,8 @@ library(readr)
 library(dplyr)
 library(data.table)
 
-
+#Note the /mnt/project/ prefix, this directs the system to read the file from your project 
+#you do not need to specify project ID, e.g. /mnt/project/your/filepath/here.txt
 heterozygote_readin_allancs = data.table::fread("/mnt/project/Resources/allancs.invalid.sample") %>% as.data.frame()
 
 
